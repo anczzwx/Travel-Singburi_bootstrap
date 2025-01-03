@@ -163,3 +163,50 @@ main {
     max-width: 900px;
     box-sizing: border-box;
 }
+
+/* Grid Layout */
+.basic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.basic-grid-item {
+    position: relative;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #34495e; /* เพิ่มพื้นหลังกริดที่สีเข้มขึ้น */
+}
+
+.basic-grid-item img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    filter: brightness(100%);
+}
+
+.basic-grid-item img:hover {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.basic-grid-item .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.basic-grid-item:hover .overlay {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
