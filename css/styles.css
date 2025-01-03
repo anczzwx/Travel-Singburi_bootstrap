@@ -308,3 +308,45 @@ footer .social-links {
     margin-top: 5px;
     line-height: 1.5;
 }
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column; /* จัดเมนูในแนวตั้ง */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 9999; /* เพิ่ม z-index เพื่อให้เมนูแสดงอยู่ด้านหน้า */
+    }
+
+    .navbar-toggler {
+        display: block; /* แสดงปุ่ม toggle */
+    }
+
+    .navbar-menu.show {
+        display: flex; /* แสดงเมนูเมื่อคลิกปุ่ม toggle */
+    }
+
+    .hero {
+        height: 300px; /* ปรับความสูงของ Hero Section */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* ขนาดฟอนต์ของหัวข้อใน Hero Section */
+    }
+
+    .basic-grid {
+        grid-template-columns: repeat(2, 1fr); /* ใช้กริด 2 คอลัมน์แทน 4 คอลัมน์ */
+    }
+
+    /* สำหรับ search bar */
+    .search-bar {
+        display: none; /* ซ่อนแถบค้นหาบนมือถือ */
+    }
+}
+
