@@ -11,5 +11,42 @@
 </head>
 <body>
 
+    <!-- Modal สำหรับฟอร์มติดต่อ -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">ฟอร์มติดต่อ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="กรอกชื่อ-นามสกุล" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="กรอกอีเมล" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="message" class="form-label">ข้อความ</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="กรอกข้อความ" rows="4" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-primary">ส่งข้อมูล</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
