@@ -350,3 +350,25 @@ footer .social-links {
     }
 }
 
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .mainA h1 {
+        font-size: 40px; /* ปรับขนาดฟอนต์ */
+        margin-bottom: 20px;
+    }
+
+    .image-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .t {
+        font-size: 1rem;
+        bottom: 5px;
+        left: 5px;
+        padding: 8px;
+    }
+
+    .t p {
+        font-size: 0.9rem;
+    }
+}
