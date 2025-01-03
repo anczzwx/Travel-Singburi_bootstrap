@@ -210,3 +210,36 @@ main {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.2);
 }
+
+/* Footer */
+footer {
+    background: #2c3e50; /* สีพื้นหลังของฟุตเตอร์ */
+    color: #ecf0f1; /* สีข้อความในฟุตเตอร์ */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin-right: 2rem;
+}
+
+footer p:last-child {
+    display: block;
+    margin-top: 1rem;
+}
+
+/* เปลี่ยนสีข้อความ Facebook */
+footer .facebook-link {
+    color: #114dcf; /* สีข้อความเป็นสีของ Facebook */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+}
+
+/* การจัดตำแหน่ง */
+footer .social-links {
+    text-align: center;
+    margin-top: 0.5rem;
+}
